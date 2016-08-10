@@ -100,7 +100,3 @@ nav ul li {
     display: inline-block;
     margin: 0 1rem;
 }
-
-nav ul li:first-of-type {
-    margin-left: 0;
-}
