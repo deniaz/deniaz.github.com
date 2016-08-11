@@ -1,6 +1,6 @@
-@-webkit-keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-@-moz-keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 h1,
 p,
@@ -86,7 +86,7 @@ a {
 }
 
 a:hover {
-    color: #F7567;
+    color: #F7567C;
     border-bottom: 1px solid #222222;
 }
 
@@ -118,13 +118,13 @@ nav a {
     font-size: 1.75rem;
     border-bottom: none;
     transition: color .25s ease-in-out;
-    fill: #222222;
 }
 
-nav a:hover {
-    border-bottom: none;
-    fill: #343434;
-}
+nav a path { fill: #222222; }
+
+nav a:hover { border-bottom: none; }
+
+nav a:hover path { fill: #343434; }
 
 nav ul li {
     display: inline-block;
