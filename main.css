@@ -1,3 +1,24 @@
+@-webkit-keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+h1,
+p,
+nav ul li {
+    opacity: 0;
+    -webkit-animation: fade-in ease-in-out 1s;
+    -moz-animation: fade-in ease-in-out 1s;
+    animation: fade-in ease-in-out 1s;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
 body {
     position: relative;
 }
@@ -46,6 +67,15 @@ p {
     font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+em {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
 }
 
 a {
@@ -99,4 +129,22 @@ nav a:hover {
 nav ul li {
     display: inline-block;
     margin: 0 1rem;
+}
+
+nav ul li {
+    -webkit-animation-delay: .75s;
+    -moz-animation-delay: .75s;
+    animation-delay: .75s;
+}
+
+nav ul li:first-of-type {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+nav ul li:last-of-type {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
 }
