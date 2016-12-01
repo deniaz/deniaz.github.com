@@ -2,8 +2,15 @@
 @-moz-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 h1,
 p,
+ul,
 nav ul li {
     opacity: 0;
     -webkit-animation: fade-in ease-in-out 1s;
@@ -71,6 +78,25 @@ p {
     -webkit-animation-delay: .25s;
     -moz-animation-delay: .25s;
     animation-delay: .25s;
+}
+
+p.no-margin {
+    margin-bottom: 0;
+}
+
+p.center {
+    text-align: center;
+}
+
+ul {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    -webkit-margin-before: .5rem;
+
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
 }
 
 em {
